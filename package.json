@@ -1,0 +1,28 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "keywords": [],
+  "author": "Junyoung Choi <fluke8259@gmail.com> (https://github.com/rokt33r)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.5.0",
+    "next": "^4.2.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "styled-components": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "standard": "^10.0.3"
+  }
+}
