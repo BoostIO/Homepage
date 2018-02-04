@@ -23,6 +23,10 @@ export default class MyDocument extends Document {
           <meta name='msapplication-TileColor' content='#00aba9' />
           <meta name='theme-color' content='#ffffff' />
 
+          <link href='/static/normalize.css' rel='stylesheet' />
+          <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,700' rel='stylesheet' />
+          <link href='/static/base.css' rel='stylesheet' />
+
           {this.props.styleTags}
         </Head>
         <body>
