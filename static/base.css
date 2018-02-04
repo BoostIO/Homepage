@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Renner';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/static/fonts/renner/renner-book.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Renner';
+  font-style: normal;
+  font-weight: 700;
+  src: url(/static/fonts/renner/renner-bold.otf) format('opentype');
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Renner', sans-serif;
+  font-weight: 400;
+}
