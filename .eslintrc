@@ -1,0 +1,8 @@
+{
+  "extends": ["standard", "standard-react"],
+  "parser": "babel-eslint",
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-indent": "off"
+  }
+}

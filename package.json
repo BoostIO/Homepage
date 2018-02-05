@@ -6,7 +6,8 @@
   "scripts": {
     "start": "next",
     "build": "next build",
-    "dev": "next dev"
+    "dev": "next dev",
+    "lint": "eslint **/*.js"
   },
   "keywords": [],
   "author": "Junyoung Choi <fluke8259@gmail.com> (https://github.com/rokt33r)",
@@ -23,9 +24,13 @@
     "babel-plugin-inline-dotenv": "^1.1.2",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-preset-stage-2": "^6.24.1",
-    "standard": "^11.0.0-beta.0"
-  },
-  "standard": {
-    "parser": "babel-eslint"
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-standard": "^3.0.1"
   }
 }
