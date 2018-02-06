@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "next",
-    "build": "next build",
+    "build": "next build && next export",
     "dev": "next dev",
     "lint": "eslint **/*.js"
   },
@@ -31,6 +31,7 @@
     "eslint-plugin-node": "^6.0.0",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.6.1",
-    "eslint-plugin-standard": "^3.0.1"
+    "eslint-plugin-standard": "^3.0.1",
+    "http-server": "^0.11.1"
   }
 }
