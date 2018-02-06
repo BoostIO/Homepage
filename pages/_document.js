@@ -1,3 +1,4 @@
+import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
@@ -28,6 +29,7 @@ export default class MyDocument extends Document {
           <link href='/static/base.css' rel='stylesheet' />
 
           {this.props.styleTags}
+          <script defer src='https://use.fontawesome.com/releases/v5.0.6/js/all.js' />
         </Head>
         <body>
           <Main />
