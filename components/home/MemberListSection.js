@@ -35,24 +35,25 @@ const MemberListSection = () => (
         <img alt='profile image' src='https://avatars.githubusercontent.com/u/8602615?s=120&v=4' />
         <h3>Kazumasa Yokomizo</h3>
         <p>
-          <a href='https://github.com/kazup01'><i className='fab fa-github' /></a>
-          <a href='mailto:kazz@boostio.co'><i className='fa fa-envelope' /></a>
+          <a target='_blank' href='https://github.com/kazup01'><i className='fab fa-github' /></a>
+          <a target='_blank' href='https://twitter.com/kazup_bot'><i className='fab fa-twitter' /></a>
+          <a target='_blank' href='mailto:kazz@boostio.co'><i className='fa fa-envelope' /></a>
         </p>
       </li>
       <li>
         <img alt='profile image' src='https://avatars.githubusercontent.com/u/5865853?s=120&v=4' />
         <h3>Junyoung Choi</h3>
         <p>
-          <a href='https://github.com/rokt33r'><i className='fab fa-github' /></a>
-          <a href='mailto:rokt33r@boostio.co'><i className='fa fa-envelope' /></a>
+          <a target='_blank' href='https://github.com/rokt33r'><i className='fab fa-github' /></a>
+          <a target='_blank' href='mailto:rokt33r@boostio.co'><i className='fa fa-envelope' /></a>
         </p>
       </li>
       <li>
         <img alt='profile image' src='https://avatars2.githubusercontent.com/u/32901422?s=120&v=4' />
         <h3>Junpei Shimotsu</h3>
         <p>
-          <a href='https://github.com/junp1234'><i className='fab fa-github' /></a>
-          <a href='mailto:junp@boostio.co'><i className='fa fa-envelope' /></a>
+          <a target='_blank' href='https://github.com/junp1234'><i className='fab fa-github' /></a>
+          <a target='_blank' href='mailto:junp@boostio.co'><i className='fa fa-envelope' /></a>
         </p>
       </li>
       <li>
