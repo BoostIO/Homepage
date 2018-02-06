@@ -1,13 +1,14 @@
 {
-  "name": "homepage",
+  "name": "boostio.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "BoostIO Homepage",
   "main": "index.js",
   "scripts": {
-    "start": "next",
+    "start": "hs out",
     "build": "next build && next export",
     "dev": "next dev",
-    "lint": "eslint **/*.js"
+    "lint": "eslint **/*.js",
+    "deploy": "sh scripts/deploy.sh"
   },
   "keywords": [],
   "author": "Junyoung Choi <fluke8259@gmail.com> (https://github.com/rokt33r)",
