@@ -7,17 +7,17 @@ npm i
 npm run dev
 ```
 
-Go to `http://localhost:3000`
+Go to `http://localhost:3000`.
 
 ## Deployment
 
-Build stuff
+Build stuff.
 
 ```
 npm run build
 ```
 
-Check if the page works properly.
+Serve the compiled page. `http://localhost:8080`
 
 ```
 npm start
