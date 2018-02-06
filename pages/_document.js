@@ -15,6 +15,10 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <title>BoostIO</title>
+
+          <meta name='description' content='Tokyo based open source enthusiastic collective.' />
+
           <meta name='viewport' content='width=device-width' />
 
           <link rel='apple-touch-icon' sizes='180x180' href='/static/favicon/apple-touch-icon.png' />

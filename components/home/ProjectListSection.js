@@ -33,13 +33,13 @@ const ProjectList = styled.ul`
   li p {
     line-height: 1.6;
   }
-  li a.url {
+  li p.url {
     color: #1864ab;
   }
   li:hover {
     transform: translateY(-2px);
   }
-  li:hover a.url {
+  li:hover p.url {
     color: #1c7ed6;
     text-decoration: underline;
   }
@@ -56,7 +56,7 @@ const ProjectListSection = () => (
             src='/static/images/boostnote-logo.png' />
           <h3>Boostnote</h3>
           <p>Note-taking app<br /> for developers</p>
-          <p><a className='url'>boostnote.io</a></p>
+          <p className='url'>boostnote.io</p>
         </a>
       </li>
       <li>
@@ -67,7 +67,7 @@ const ProjectListSection = () => (
             src='/static/images/boostio-logo.svg' />
           <h3>Boostlog</h3>
           <p>Publication platform<br />  with Markdown</p>
-          <p><a className='url'>boostlog.io</a></p>
+          <p className='url'>boostlog.io</p>
         </a>
       </li>
     </ProjectList>
