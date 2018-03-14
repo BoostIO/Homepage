@@ -4,6 +4,7 @@ import Section from './Section'
 
 const MemberList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
   justify-content: center;
@@ -33,7 +34,7 @@ const MemberListSection = () => (
     <MemberList>
       <li>
         <img alt='profile image' src='https://avatars.githubusercontent.com/u/8602615?s=120&v=4' />
-        <h3>Kazumasa Yokomizo</h3>
+        <h3>Kazz Yokomizo</h3>
         <p>
           <a target='_blank' href='https://github.com/kazup01'><i className='fab fa-github' /></a>
           <a target='_blank' href='https://twitter.com/kazup_bot'><i className='fab fa-twitter' /></a>
@@ -61,6 +62,20 @@ const MemberListSection = () => (
         <h3>Sosuke Suzuki</h3>
         <p>
           <a href='https://github.com/sosukesuzuki'><i className='fab fa-github' /></a>
+        </p>
+      </li>
+      <li>
+        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/14539280?s=120&v=4' />
+        <h3>Seung Kwak</h3>
+        <p>
+          <a href='https://github.com/GUIEEN'><i className='fab fa-github' /></a>
+        </p>
+      </li>
+      <li>
+        <img alt='profile image' src='https://avatars3.githubusercontent.com/u/1094660?s=120&v=4' />
+        <h3>Shuhei Hiya</h3>
+        <p>
+          <a href='https://github.com/syuhei176'><i className='fab fa-github' /></a>
         </p>
       </li>
     </MemberList>
