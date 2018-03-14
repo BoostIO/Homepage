@@ -4,6 +4,7 @@ import Section from './Section'
 
 const MemberList = styled.ul`
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   list-style: none;
   justify-content: center;
