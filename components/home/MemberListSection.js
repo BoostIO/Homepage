@@ -51,7 +51,7 @@ const MemberListSection = () => (
       </li>
       <li>
         <img alt='profile image' src='https://avatars2.githubusercontent.com/u/32901422?s=120&v=4' />
-        <h3>Junpei Shimotsu</h3>
+        <h3>Jumpei Shimotsu</h3>
         <p>
           <a target='_blank' href='https://github.com/junp1234'><i className='fab fa-github' /></a>
           <a target='_blank' href='mailto:junp@boostio.co'><i className='fa fa-envelope' /></a>
