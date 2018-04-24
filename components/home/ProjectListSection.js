@@ -76,7 +76,7 @@ const ProjectListSection = () => (
           height='100'
           src='/static/images/issuehunt.png' />
         <h3>Issue Hunt</h3>
-        <p>The easiest monetise way to OSS.</p>
+        <p>The easiest monetise way for OSS.</p>
         <p className='url'>Coming soon</p>
       </li>
     </ProjectList>
