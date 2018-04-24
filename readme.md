@@ -27,7 +27,7 @@ Deploy it to github page! 🚀
 
 ```
 npm run deploy
-``
+```
 
 Deploy it to now.sh
 
