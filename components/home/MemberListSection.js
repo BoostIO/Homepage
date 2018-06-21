@@ -12,7 +12,7 @@ const MemberList = styled.ul`
     flex-direction: column;
   }
   li {
-    padding: 0 15px;
+    padding: 0 40px;
     text-align: center;
   }
   li img {
@@ -50,6 +50,13 @@ const MemberListSection = () => (
         </p>
       </li>
       <li>
+        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/14539280?s=120&v=4' />
+        <h3>Seung Kwak</h3>
+        <p>
+          <a href='https://github.com/GUIEEN'><i className='fab fa-github' /></a>
+        </p>
+      </li>
+      <li>
         <img alt='profile image' src='https://avatars2.githubusercontent.com/u/32901422?s=120&v=4' />
         <h3>Jumpei Shimotsu</h3>
         <p>
@@ -57,6 +64,9 @@ const MemberListSection = () => (
           <a target='_blank' href='mailto:junp@boostio.co'><i className='fa fa-envelope' /></a>
         </p>
       </li>
+    </MemberList>
+
+    <MemberList>
       <li>
         <img alt='profile image' src='https://avatars.githubusercontent.com/u/14838850?s=120&v=4' />
         <h3>Sosuke Suzuki</h3>
@@ -65,10 +75,10 @@ const MemberListSection = () => (
         </p>
       </li>
       <li>
-        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/14539280?s=120&v=4' />
-        <h3>Seung Kwak</h3>
+        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/5432448?s=120&v=4' />
+        <h3>sadakoa</h3>
         <p>
-          <a href='https://github.com/GUIEEN'><i className='fab fa-github' /></a>
+          <a href='https://github.com/sadakoa'><i className='fab fa-github' /></a>
         </p>
       </li>
       <li>

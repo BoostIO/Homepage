@@ -71,13 +71,15 @@ const ProjectListSection = () => (
         </a>
       </li>
       <li>
-        <img
-          width='100'
-          height='100'
-          src='/static/images/issuehunt.png' />
-        <h3>Issue Hunt</h3>
-        <p>The easiest monetise way for OSS.</p>
-        <p className='url'>Coming soon</p>
+        <a target='_blank' href='https://issuehunt.io'>
+          <img
+            width='100'
+            height='100'
+            src='/static/images/issuehunt.png' />
+          <h3>IssueHunt</h3>
+          <p>Funding platform for open source project</p>
+          <p className='url'>issuehunt.io</p>
+        </a>
       </li>
     </ProjectList>
   </Section>
