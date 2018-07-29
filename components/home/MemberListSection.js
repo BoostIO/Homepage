@@ -20,7 +20,7 @@ const MemberListItem = styled.li`
   padding: 0 20px;
   text-align: center;
   :not(:first-child) {
-    margin-top: 56px;
+    margin-top: 64px;
   }
   h1 {
     margin-top: 16px;
@@ -65,23 +65,25 @@ const MemberListItem = styled.li`
   }
 
   @media screen and (min-width: 540px) {
-    width: 50%;
+    width: 35%;
     padding: 0 10px;
-    :not(:first-child) {
+    :nth-child(3),
+    :nth-child(4),
+    :nth-child(5),
+    :nth-child(6),
+    :nth-child(7) {
+      margin-top: 56px;
+    }
+    :nth-child(2) {
       margin-top: 0;
     }
   }
 
-  @media screen and (min-width: 540px) and (max-width: 767px) {
-    :nth-child(1),
-    :nth-child(2) {
-      margin-bottom: 40px;
-    }
-  }
 
   @media screen and (min-width: 768px) {
     width: 25%;
-    :not(:first-child) {
+    :nth-child(3),
+    :nth-child(4) {
       margin-top: 0;
     }
   }
@@ -193,6 +195,7 @@ const MemberListSection = () => (
           </a>
         </MemberOuterLinks>
       </MemberListItem>
+
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
@@ -207,6 +210,7 @@ const MemberListSection = () => (
           </a>
         </MemberOuterLinks>
       </MemberListItem>
+
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
@@ -218,6 +222,56 @@ const MemberListSection = () => (
             className='github'
             href='https://github.com/rohjs'>
             <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-sadakoa.jpg' />
+        </MemberProfileImage>
+        <h1>Sadakoa</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/sadakoa'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-hiya.jpg' />
+        </MemberProfileImage>
+        <h1>Shuhei Hiya</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/syuhei176'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-junpei.jpg' />
+        </MemberProfileImage>
+        <h1>Jumpei Shimotsu</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/junp1234'>
+            <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:junp@boostio.co'>
+            <i className='fa fa-envelope' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
