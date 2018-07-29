@@ -27,6 +27,10 @@ injectGlobal`
     background-color: transparent;
     visibility: hidden;
   }
+  *::selection {
+    color: #fff;
+    background-color: #212529;
+  }
 `
 
 const Container = styled.div`
