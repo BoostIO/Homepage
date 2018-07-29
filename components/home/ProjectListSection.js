@@ -3,84 +3,141 @@ import Section from './Section'
 import styled from 'styled-components'
 
 const ProjectList = styled.ul`
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  max-width: 700px;
-  margin: 0 auto;
-  @media(max-width: 480px) {
-    flex-direction: column;
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0 -10px;
+  @media (min-width: 540px) {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
   }
-  li {
-    margin: 0 15px;
-    width: 50%;
-    text-align: center;
-    transition: transform ease-in-out 200ms;
-    @media(max-width: 540px) {
-      width: 100%;
-      margin: 0;
+`
+
+const ProjectListItem = styled.li`
+  width: 100%;
+  padding: 0 10px;
+  text-align: center;
+  transition: transform 400ms;
+  :not(:first-child) {
+    margin-top: 48px;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.333333333;
+    letter-spacing: -.01em;
+    color: #212529;
+  }
+  a {
+    text-decoration: none;
+    color: #a1a7b3;
+    transition: color 300ms;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: -.01em;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #3d434d;
+  }
+  p {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3d434d;
+  }
+  :hover {
+    text-decoration: none;
+    transform: translateY(-4px);
+    img {
+      transform: scale(1.05);
     }
   }
-  li a {
-    color: inherit;
-    text-decoration: none;
+
+  @media screen and (min-width: 768px) {
+    width: 33%;
+    :not(:first-child) {
+      margin-top: 0;
+    }
   }
-  li h3 {
-    font-size: 32px;
-    margin: 10px auto 0;
-  }
-  li p {
-    line-height: 1.6;
-  }
-  li p.url {
-    color: #1864ab;
-  }
-  li:hover {
-    transform: translateY(-2px);
-  }
-  li:hover p.url {
-    color: #1c7ed6;
-    text-decoration: underline;
+`
+
+const ProjectLogo = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  img {
+    transition: transform 300ms;
   }
 `
 
 const ProjectListSection = () => (
   <Section title='Projects'>
     <ProjectList>
-      <li>
-        <a target='_blank' href='https://boostnote.io'>
+      <ProjectListItem>
+        <ProjectLogo href='https://boostnote.io'
+          target='_blank'>
           <img
             width='100'
             height='100'
-            src='/static/images/boostnote-logo.png' />
-          <h3>Boostnote</h3>
-          <p>Note-taking app<br /> for developers</p>
-          <p className='url'>boostnote.io</p>
+            src='/static/images/img-boostnote.jpg' />
+        </ProjectLogo>
+        <h1>Boostnote</h1>
+        <a href='https://boostnote.io'
+          className='url'
+          target='_blank'>
+          boostnote.io
         </a>
-      </li>
-      <li>
-        <a target='_blank' href='https://boostlog.io'>
+        <p>
+          Note-taking app
+          <br />
+          for developers
+        </p>
+      </ProjectListItem>
+      <ProjectListItem>
+        <ProjectLogo href='https://boostlog.io'
+          target='_blank'>
           <img
             width='100'
             height='100'
-            src='/static/images/boostio-logo.svg' />
-          <h3>Boostlog</h3>
-          <p>Publication platform<br />  with Markdown</p>
-          <p className='url'>boostlog.io</p>
+            src='/static/images/img-boostlog.jpg' />
+        </ProjectLogo>
+        <h1>Boostlog</h1>
+        <a href='https://boostlog.io'
+          className='url'
+          target='_blank'>
+          boostlog.io
         </a>
-      </li>
-      <li>
-        <a target='_blank' href='https://issuehunt.io'>
+        <p>
+          Publication platform
+          <br />
+          with Markdown
+        </p>
+      </ProjectListItem>
+      <ProjectListItem>
+        <ProjectLogo href='https://issuehunt.io'
+          target='_blank'>
           <img
             width='100'
             height='100'
-            src='/static/images/issuehunt.png' />
-          <h3>IssueHunt</h3>
-          <p>Funding platform for open source project</p>
-          <p className='url'>issuehunt.io</p>
+            src='/static/images/img-issuehunt.jpg' />
+        </ProjectLogo>
+        <h1>IssueHunt</h1>
+        <a href='https://issuehunt.io'
+          className='url'
+          target='_blank'>
+          issuehunt.io
         </a>
-      </li>
+        <p>
+          Funding platform for
+          <br/>
+          open source project
+        </p>
+      </ProjectListItem>
     </ProjectList>
   </Section>
 )
