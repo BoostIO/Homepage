@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="40px" viewBox="0 0 50 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="boostio-img" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" fill="#00C786" fill-rule="nonzero">
+            <ellipse id="Oval" fill-opacity="0.9" cx="20.0135593" cy="20" rx="20.0135593" ry="20"></ellipse>
+            <ellipse id="Oval" fill-opacity="0.4" cx="24.6" cy="20" rx="20.0135593" ry="20"></ellipse>
+            <ellipse id="Oval" fill-opacity="0.17" cx="29.1864407" cy="20" rx="20.0135593" ry="20"></ellipse>
+        </g>
+    </g>
+</svg>
