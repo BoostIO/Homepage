@@ -3,91 +3,224 @@ import styled from 'styled-components'
 import Section from './Section'
 
 const MemberList = styled.ul`
+  padding-left: 0;
+  margin-top: 56px;
+  list-style-type: none;
+  margin: 0 -10px;
+  @media (min-width: 540px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+  }
+`
+
+const MemberListItem = styled.li`
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+  :not(:first-child) {
+    margin-top: 56px;
+  }
+  h1 {
+    margin-top: 16px;
+    margin-bottom: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    color: #3d434d;
+  }
+  a {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: #a1a7b3;
+    transition: color 300ms;
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: -.01em;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #3d434d;
+  }
+  .url {
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3d434d;
+  }
+  .profile {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+  }
+
+  @media screen and (min-width: 540px) {
+    width: 50%;
+    padding: 0 10px;
+    :not(:first-child) {
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: 540px) and (max-width: 767px) {
+    :nth-child(1),
+    :nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 25%;
+    :not(:first-child) {
+      margin-top: 0;
+    }
+  }
+`
+
+const MemberOuterLinks = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-  list-style: none;
   justify-content: center;
-  @media(max-width: 540px) {
-    flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    font-size: 1rem;
+    line-height: 24px;
+    color: #bdc1c9;
   }
-  li {
-    padding: 0 40px;
-    text-align: center;
+  .twitter:hover {
+    color: #0084ff;
   }
-  li img {
-    border-radius: 50%;
+  .github:hover {
+    color: #24292e;
   }
-  li h3 {
-    margin-bottom: 0px;
+  .mail:hover {
+    color: #00c786;
   }
-  li p {
-    margin-top: 10px;
+`
+
+const MemberProfileImage = styled.div`
+  position: relative;
+  width: 100%;
+  max-width: 160px;
+  margin: 0 auto;
+  transition: transform 300ms;
+  ::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: 8px;
+    left: 50%;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, .3);
+    background-color: #fff;
+    transition: box-shadow 300ms;
   }
-  li p a {
-    margin: 0 5px;
+  :hover {
+    transform: translateY(3px);
+    ::after {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .7);
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
   }
 `
 
 const MemberListSection = () => (
-  <Section title='About us'>
+  <Section title='Team'>
     <MemberList>
-      <li>
-        <img alt='profile image' src='https://avatars.githubusercontent.com/u/8602615?s=120&v=4' />
-        <h3>Kazz Yokomizo</h3>
-        <p>
-          <a target='_blank' href='https://github.com/kazup01'><i className='fab fa-github' /></a>
-          <a target='_blank' href='https://twitter.com/kazup_bot'><i className='fab fa-twitter' /></a>
-          <a target='_blank' href='mailto:kazz@boostio.co'><i className='fa fa-envelope' /></a>
-        </p>
-      </li>
-      <li>
-        <img alt='profile image' src='https://avatars.githubusercontent.com/u/5865853?s=120&v=4' />
-        <h3>Junyoung Choi</h3>
-        <p>
-          <a target='_blank' href='https://github.com/rokt33r'><i className='fab fa-github' /></a>
-          <a target='_blank' href='mailto:rokt33r@boostio.co'><i className='fa fa-envelope' /></a>
-        </p>
-      </li>
-      <li>
-        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/14539280?s=120&v=4' />
-        <h3>Seung Kwak</h3>
-        <p>
-          <a href='https://github.com/GUIEEN'><i className='fab fa-github' /></a>
-        </p>
-      </li>
-      <li>
-        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/32901422?s=120&v=4' />
-        <h3>Jumpei Shimotsu</h3>
-        <p>
-          <a target='_blank' href='https://github.com/junp1234'><i className='fab fa-github' /></a>
-          <a target='_blank' href='mailto:junp@boostio.co'><i className='fa fa-envelope' /></a>
-        </p>
-      </li>
-    </MemberList>
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-kazz.jpg' />
+        </MemberProfileImage>
+        <h1>Kazz Yokomizo</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/kazup01'>
+            <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='twitter'
+            href='https://twitter.com/kazup_bot'>
+            <i className='fab fa-twitter' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:kazz@boostio.co'>
+          <i className='fa fa-envelope' />
+        </a>
+        </MemberOuterLinks>
+      </MemberListItem>
 
-    <MemberList>
-      <li>
-        <img alt='profile image' src='https://avatars.githubusercontent.com/u/14838850?s=120&v=4' />
-        <h3>Sosuke Suzuki</h3>
-        <p>
-          <a href='https://github.com/sosukesuzuki'><i className='fab fa-github' /></a>
-        </p>
-      </li>
-      <li>
-        <img alt='profile image' src='https://avatars2.githubusercontent.com/u/5432448?s=120&v=4' />
-        <h3>sadakoa</h3>
-        <p>
-          <a href='https://github.com/sadakoa'><i className='fab fa-github' /></a>
-        </p>
-      </li>
-      <li>
-        <img alt='profile image' src='https://avatars3.githubusercontent.com/u/1094660?s=120&v=4' />
-        <h3>Shuhei Hiya</h3>
-        <p>
-          <a href='https://github.com/syuhei176'><i className='fab fa-github' /></a>
-        </p>
-      </li>
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-junyoung.jpg' />
+        </MemberProfileImage>
+        <h1>Junyoung Choi</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/rokt33r'>
+            <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:rokt33r@boostio.co'>
+            <i className='fa fa-envelope' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-suzuki.jpg' />
+        </MemberProfileImage>
+        <h1>Sosuke Suzuki</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/sosukesuzuki'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-woohyeon.jpg' />
+        </MemberProfileImage>
+        <h1>Woohyeon Roh</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/rohjs'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
     </MemberList>
   </Section>
 )
