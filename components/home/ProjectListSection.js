@@ -58,7 +58,7 @@ const ProjectListItem = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-    width: 33%;
+    width: 40%;
     :not(:first-child) {
       margin-top: 0;
     }
@@ -95,10 +95,10 @@ const ProjectListSection = () => (
         <p>
           Note-taking app
           <br />
-          for developers
+          for developers.
         </p>
       </ProjectListItem>
-      <ProjectListItem>
+      {/* <ProjectListItem>
         <ProjectLogo href='https://boostlog.io'
           target='_blank'>
           <img
@@ -115,9 +115,9 @@ const ProjectListSection = () => (
         <p>
           Publication platform
           <br />
-          with Markdown
+          with Markdown.
         </p>
-      </ProjectListItem>
+      </ProjectListItem> */}
       <ProjectListItem>
         <ProjectLogo href='https://issuehunt.io'
           target='_blank'>
@@ -133,9 +133,9 @@ const ProjectListSection = () => (
           issuehunt.io
         </a>
         <p>
-          Funding platform for
+          Issue based bounty platform
           <br/>
-          open source project
+          for open source projects.
         </p>
       </ProjectListItem>
     </ProjectList>
