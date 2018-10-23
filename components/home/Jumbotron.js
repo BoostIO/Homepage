@@ -58,8 +58,8 @@ const Jumbotron = () => (
     <CompanyName>
       <Logo type='img'
         alt='BoostIO Logo'
-        width={50}
-        height={40}
+        width={160}
+        height={80}
       />
       <Logo type='text'
         alt='BoostIO'
@@ -68,7 +68,7 @@ const Jumbotron = () => (
       />
     </CompanyName>
     <CompanyDescription>
-      Tokyo based open source enthusiastic collective
+      The Open Source Enthusiastic Collective
     </CompanyDescription>
   </Container>
 )

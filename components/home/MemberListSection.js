@@ -154,9 +154,9 @@ const MemberListSection = () => (
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
-            src='/static/images/member-kazz.jpg' />
+            src='/static/images/member-kazz.png' />
         </MemberProfileImage>
-        <h1>Kazz Yokomizo</h1>
+        <h1>Kazz Yokomizo / KZ</h1>
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
@@ -199,14 +199,19 @@ const MemberListSection = () => (
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
-            src='/static/images/member-suzuki.jpg' />
+            src='/static/images/member-sadakoa.jpg' />
         </MemberProfileImage>
-        <h1>Sosuke Suzuki</h1>
+        <h1>Sadakoa</h1>
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
-            href='https://github.com/sosukesuzuki'>
+            href='https://github.com/sadakoa'>
             <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='twitter'
+            href='https://twitter.com/sadako_a_'>
+            <i className='fab fa-twitter' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
@@ -229,13 +234,78 @@ const MemberListSection = () => (
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
-            src='/static/images/member-sadakoa.jpg' />
+            src='/static/images/member-sheenan.jpeg' />
         </MemberProfileImage>
-        <h1>Sadakoa</h1>
+        <h1>Sheenan Tenepre</h1>
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
-            href='https://github.com/sadakoa'>
+            href='https://github.com/therealedsheenan'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-kaga.png' />
+        </MemberProfileImage>
+        <h1>Kagayaki Kawabata</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/krk324'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-song.jpeg' />
+        </MemberProfileImage>
+        <h1>Joohoun Song</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://twitter.com/joohounsong'>
+            <i className='fab fa-twitter' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:joohoun@boostio.co'>
+            <i className='fa fa-envelope' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-suzuki.jpg' />
+        </MemberProfileImage>
+        <h1>Sosuke Suzuki</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/sosukesuzuki'>
+            <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-zerox.jpeg' />
+        </MemberProfileImage>
+        <h1>Nguyen Viet Hung</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/ZeroX-DG'>
             <i className='fab fa-github' />
           </a>
         </MemberOuterLinks>
@@ -275,7 +345,9 @@ const MemberListSection = () => (
           </a>
         </MemberOuterLinks>
       </MemberListItem>
+
     </MemberList>
+
   </Section>
 )
 
