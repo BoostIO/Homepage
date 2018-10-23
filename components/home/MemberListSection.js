@@ -278,6 +278,11 @@ const MemberListSection = () => (
             href='mailto:joohoun@boostio.co'>
             <i className='fa fa-envelope' />
           </a>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/hunnycode'>
+            <i className='fab fa-github' />
+          </a>
         </MemberOuterLinks>
       </MemberListItem>
 
