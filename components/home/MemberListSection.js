@@ -225,7 +225,7 @@ const MemberListSection = () => (
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
-            href='https://github.com/rohjs'>
+            href='https://github.com/whroh'>
             <i className='fab fa-github' />
           </a>
         </MemberOuterLinks>
