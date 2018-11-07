@@ -225,8 +225,13 @@ const MemberListSection = () => (
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
-            href='https://github.com/rohjs'>
+            href='https://github.com/whroh'>
             <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:woohyeon@boostio.co'>
+            <i className='fa fa-envelope' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
@@ -257,6 +262,11 @@ const MemberListSection = () => (
             className='github'
             href='https://github.com/krk324'>
             <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='mail'
+            href='mailto:kagayaki@issuehunt.io'>
+            <i className='fa fa-envelope' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
@@ -336,17 +346,12 @@ const MemberListSection = () => (
           <img alt='Profile'
             src='/static/images/member-junpei.jpg' />
         </MemberProfileImage>
-        <h1>Jumpei Shimotsu</h1>
+        <h1>Jump</h1>
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
             href='https://github.com/junp1234'>
             <i className='fab fa-github' />
-          </a>
-          <a target='_blank'
-            className='mail'
-            href='mailto:junp@boostio.co'>
-            <i className='fa fa-envelope' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
