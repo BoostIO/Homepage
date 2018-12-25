@@ -199,19 +199,34 @@ const MemberListSection = () => (
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
-            src='/static/images/member-sadakoa.jpg' />
+            src='/static/images/member-kaga.png' />
         </MemberProfileImage>
-        <h1>Sadakoa</h1>
+        <h1>Kagayaki Kawabata</h1>
         <MemberOuterLinks>
           <a target='_blank'
             className='github'
-            href='https://github.com/sadakoa'>
+            href='https://github.com/krk324'>
             <i className='fab fa-github' />
           </a>
           <a target='_blank'
-            className='twitter'
-            href='https://twitter.com/sadako_a_'>
-            <i className='fab fa-twitter' />
+            className='mail'
+            href='mailto:kagayaki@issuehunt.io'>
+            <i className='fa fa-envelope' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-davy.jpg' />
+        </MemberProfileImage>
+        <h1>Davy Castel</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://instagram.com/davy.cstel'>
+            <i className='fab fa-instagram' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
@@ -254,26 +269,6 @@ const MemberListSection = () => (
       <MemberListItem>
         <MemberProfileImage>
           <img alt='Profile'
-            src='/static/images/member-kaga.png' />
-        </MemberProfileImage>
-        <h1>Kagayaki Kawabata</h1>
-        <MemberOuterLinks>
-          <a target='_blank'
-            className='github'
-            href='https://github.com/krk324'>
-            <i className='fab fa-github' />
-          </a>
-          <a target='_blank'
-            className='mail'
-            href='mailto:kagayaki@issuehunt.io'>
-            <i className='fa fa-envelope' />
-          </a>
-        </MemberOuterLinks>
-      </MemberListItem>
-
-      <MemberListItem>
-        <MemberProfileImage>
-          <img alt='Profile'
             src='/static/images/member-song.jpeg' />
         </MemberProfileImage>
         <h1>Joohoun Song</h1>
@@ -292,6 +287,26 @@ const MemberListSection = () => (
             className='github'
             href='https://github.com/hunnycode'>
             <i className='fab fa-github' />
+          </a>
+        </MemberOuterLinks>
+      </MemberListItem>
+
+      <MemberListItem>
+        <MemberProfileImage>
+          <img alt='Profile'
+            src='/static/images/member-sadakoa.jpg' />
+        </MemberProfileImage>
+        <h1>Sadakoa</h1>
+        <MemberOuterLinks>
+          <a target='_blank'
+            className='github'
+            href='https://github.com/sadakoa'>
+            <i className='fab fa-github' />
+          </a>
+          <a target='_blank'
+            className='twitter'
+            href='https://twitter.com/sadako_a_'>
+            <i className='fab fa-twitter' />
           </a>
         </MemberOuterLinks>
       </MemberListItem>
