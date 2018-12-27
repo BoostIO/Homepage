@@ -224,6 +224,11 @@ const MemberListSection = () => (
         <h1>Davy Castel</h1>
         <MemberOuterLinks>
           <a target='_blank'
+              className='mail'
+              href='mailto:davy@boostio.co'>
+            <i className='fa fa-envelope' />
+          </a>
+          <a target='_blank'
             className='github'
             href='https://instagram.com/davy.cstel'>
             <i className='fab fa-instagram' />
