@@ -12,8 +12,10 @@ const Footer = styled.footer`
   letter-spacing: -.02em;
 `
 
+const currentYear = new Date().getFullYear();
+
 export default () => (
   <Footer>
-    © 2018 BoostIO
+    © {currentYear} BoostIO
   </Footer>
 )
