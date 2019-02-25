@@ -84,7 +84,7 @@ const ProjectListSection = () => (
           <img
             width='100'
             height='100'
-            src='/static/images/img-boostnote.jpg' />
+            src='/static/images/img-boostnote.png' />
         </ProjectLogo>
         <h1>Boostnote</h1>
         <a href='https://boostnote.io'
@@ -98,33 +98,13 @@ const ProjectListSection = () => (
           for developers.
         </p>
       </ProjectListItem>
-      {/* <ProjectListItem>
-        <ProjectLogo href='https://boostlog.io'
-          target='_blank'>
-          <img
-            width='100'
-            height='100'
-            src='/static/images/img-boostlog.jpg' />
-        </ProjectLogo>
-        <h1>Boostlog</h1>
-        <a href='https://boostlog.io'
-          className='url'
-          target='_blank'>
-          boostlog.io
-        </a>
-        <p>
-          Publication platform
-          <br />
-          with Markdown.
-        </p>
-      </ProjectListItem> */}
       <ProjectListItem>
         <ProjectLogo href='https://issuehunt.io'
           target='_blank'>
           <img
             width='100'
             height='100'
-            src='/static/images/img-issuehunt.jpg' />
+            src='/static/images/img-issuehunt.png' />
         </ProjectLogo>
         <h1>IssueHunt</h1>
         <a href='https://issuehunt.io'
