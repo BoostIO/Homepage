@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from 'components/common/Header'
 import styled from 'styled-components'
 import { Row, Container, Col, ResponsiveEmbed, Button } from 'react-bootstrap'
 
@@ -27,6 +28,7 @@ const NewsList = styled.ul`
 
 export default () => (
   <div>
+    <Header></Header>
     <Container fluid style={{ height: '100vh', backgroundColor: '#fff', display: 'table', textAlign: 'center'}}>
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <img

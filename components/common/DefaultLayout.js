@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 import Footer from './Footer'
 import styled, { injectGlobal } from 'styled-components'
 
@@ -47,6 +48,7 @@ const Main = styled.main`
 
 export default ({children}) => (
   <Container>
+    <Header />
     <Main>
       {children}
     </Main>
