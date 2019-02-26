@@ -18,6 +18,13 @@ const ProjectList = styled.ul`
   }
 `
 
+const NewsList = styled.ul`
+  a {
+    color: #F26C50;
+    font-style: italic;
+  }
+`
+
 export default () => (
   <div>
     <Container fluid style={{ height: '100vh', backgroundColor: '#fff', display: 'table', textAlign: 'center'}}>
@@ -35,36 +42,38 @@ export default () => (
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <Container>
           <ProjectList>
-            <Col lg={5}>
-              <img
-                width='360'
-                src='/static/images/issuehunt-image.png'
-                float='center'
-              />
-            </Col>
-            <Col lg={7}>
-              <h1>
-                IssueHunt
+            <Row>
+              <Col md={5}>
                 <img
-                  width='60'
-                  height='60'
-                  src='/static/images/img-issuehunt.png'
+                  width='80%'
+                  src='/static/images/issuehunt-image.png'
+                  float='center'
                 />
-              </h1>
-              
-              <a href='https://issuehunt.io'
-                className='url'
-                target='_blank'>
-                issuehunt.io
-              </a>
-              <p>
-                オープンソースプロジェクトの為の資金調達サービス。誰でもGitHub Issueに対して報奨金を付けることができ、それらが開発者と貢献者へ分配されます。
-              </p>
-              <p>
-                現在ユーザーは170ヶ国を超えており、世界中の著名なOSSがIssueHuntに参加しています。
-              </p>
-                <a href='https://issuehunt.io/jp/sponsors'>スポンサープログラムについて</a>
-            </Col>
+              </Col>
+              <Col md={7}>
+                <h1>
+                  IssueHunt
+                  <img
+                    width='60'
+                    height='60'
+                    src='/static/images/img-issuehunt.png'
+                  />
+                </h1>
+                
+                <a href='https://issuehunt.io'
+                  className='url'
+                  target='_blank'>
+                  issuehunt.io
+                </a>
+                <p>
+                  オープンソースプロジェクトの為の資金調達サービス。誰でもGitHub Issueに対して報奨金を付けることができ、それらが開発者と貢献者へ分配されます。
+                </p>
+                <p>
+                  現在ユーザーは170ヶ国を超えており、世界中の著名なOSSがIssueHuntに参加しています。
+                </p>
+                  <a href='https://issuehunt.io/jp/sponsors'>スポンサープログラムについて</a>
+              </Col>
+            </Row>
           </ProjectList>
         </Container>
       </Row>
@@ -74,34 +83,37 @@ export default () => (
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <Container>
           <ProjectList>
-            <Col lg={7} hiddenXs>
-              <h1>
-                Boostnote
+            <Row>
+              <Col md={7}>
+                <h1>
+                  Boostnote
+                  <img
+                    width='60'
+                    height='60'
+                    src='/static/images/img-bnote.png'
+                    float='center'
+                  />  
+                </h1>
+                <a href='https://boostnote.io'
+                  className='url'
+                  target='_blank'>
+                  boostnote.io
+                </a>
+                <p>
+                  オープンソースの開発者向けのノートアプリ。GitHub Star 13,000以上を獲得し、ユーザーはほぼ全世界へ拡がっています。
+                </p>
+                <p>
+                  日本を代表するオープンソースプロジェクトとして世界で広く認知されています。
+                </p>
+              </Col>
+              <Col md={5}>
                 <img
-                  width='60'
-                  height='60'
-                  src='/static/images/img-bnote.png'
+                  width='100%'
+                  src='/static/images/boostnote-image.png'
                   float='center'
-                />  
-              </h1>
-              <a href='https://boostnote.io'
-                className='url'
-                target='_blank'>
-                boostnote.io
-              </a>
-              <p>
-                オープンソースの開発者向けのノートアプリ。GitHub Star 13,000以上を獲得し、ユーザーはほぼ全世界へ拡がっています。
-              </p>
-              <p>
-                日本を代表するオープンソースプロジェクトとして世界で広く認知されています。
-              </p>
-            </Col>
-            <Col lg={4}>
-              <img
-                width='500'
-                src='/static/images/boostnote-image.png'
-              />
-            </Col>
+                />
+              </Col>
+            </Row>
           </ProjectList>
         </Container>
       </Row>
@@ -110,135 +122,144 @@ export default () => (
     <Container fluid style={{ height: '100vh', backgroundColor: '#f8f9fa', display: 'table'}}>
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <Container>
-          <Row>
-            <Col lg={4}>
-            <h4 style={{textAlign: 'center'}}>NEWS</h4>
-            </Col>
-            <Col xs={2} sm={2} lg={2}>
-              <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
-            </Col>
-            <Col xs={8} sm={8} lg={6}>
-              <p>
-                エンジニアtypeに、CTOのChoiとDMM社松本様、ZEIT社金澤との対談が掲載されました。
-                <a href='https://type.jp/et/feature/9888'
-                  className='url'
-                  target='_blank'
-                  style={{textAlign: 'left'}}>
-                  『IssueHunt』によってエンジニアの未来はどう変わる？ オープンソースの新たな可能性に迫る
-                </a>
-              </p>
-            </Col>
-
-            <Col lg={4}></Col>
+          <NewsList>
+            <Row>
+              <Col lg={4}>
+              <h4 style={{textAlign: 'center', padding:'30px 0'}}>NEWS</h4>
+              </Col>
               <Col xs={2} sm={2} lg={2}>
                 <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
                 <p>
-                  CodeZineに、CEOの横溝とProgate社加藤様、STUDIO社甲斐様との対談が掲載されました。
-                  <a href='https://codezine.jp/article/detail/11319'
+                  エンジニアtypeに、CTOのChoiとDMM社松本様、ZEIT社金澤との対談が掲載されました。<br />
+                  <a href='https://type.jp/et/feature/9888'
                     className='url'
                     target='_blank'
                     style={{textAlign: 'left'}}>
-                    オープンソースだけで生きていくエンジニアが活躍する世界に――BoostIO 横溝氏ら若き創業者が語る、それぞれが目指す世界
+                    『IssueHunt』によってエンジニアの未来はどう変わる？ オープンソースの新たな可能性に迫る
                   </a>
                 </p>
-            </Col>
+              </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    BusinessInsiderに、CEO横溝のインタビューが掲載されました。<br />
+                    <a href='https://www.businessinsider.jp/post-184830'
+                      className='url'
+                      target='_blank'
+                      style={{textAlign: 'left'}}>
+                      エンジニアの評価を可視化する25歳起業家が惚れ込んだ高校生
+                    </a>
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-                <p>
-                  BusinessInsiderに、CEO横溝のインタビューが掲載されました。
-                  <a href='https://www.businessinsider.jp/post-184830'
-                    className='url'
-                    target='_blank'
-                    style={{textAlign: 'left'}}>
-                    エンジニアの評価を可視化する25歳起業家が惚れ込んだ高校生
-                  </a>
-                </p>
-            </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    CodeZineに、CEOの横溝とProgate社加藤様、STUDIO社甲斐様との対談が掲載されました。<br />
+                    <a href='https://codezine.jp/article/detail/11319'
+                      className='url'
+                      target='_blank'
+                      style={{textAlign: 'left'}}>
+                      オープンソースだけで生きていくエンジニアが活躍する世界に――BoostIO 横溝氏ら若き創業者が語る、それぞれが目指す世界
+                    </a>
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-                <p>
-                  日経産業新聞紙面に、CEO横溝のインタビューが掲載されました。オープンソースに対価を。BoostIO - 開発者支援の波、日本から
-                </p>
-                <p>
-                  CodeZineに、CEOの横溝とDMM社松本様との対談が掲載されました。
-                  <a href='https://codezine.jp/article/detail/11256'
-                    className='url'
-                    target='_blank'
-                    style={{textAlign: 'left'}}>
-                    IssueHuntが目指す、OSSが正当に評価される世界とは
-                  </a>
-                </p>
-            </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 01</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    日経産業新聞紙面に、CEO横溝のインタビューが掲載されました。「オープンソースに対価を。BoostIO - 開発者支援の波、日本から」
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-                <p>
-                  第三者割当増資を実施し、詳報がTechCrunchに掲載されました。
-                  <a href='https://jp.techcrunch.com/2018/12/03/issuehunt-fundraising/'
-                    className='url'
-                    target='_blank'
-                    style={{textAlign: 'left'}}>
-                    オープンソースの貢献者が報われる文化を——報賞金サービス「IssueHunt」運営が1億円を資金調達
-                  </a>
-                </p>
-            </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2018 12</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    CodeZineに、CEOの横溝とDMM社松本様との対談が掲載されました。<br />
+                    <a href='https://codezine.jp/article/detail/11256'
+                      className='url'
+                      target='_blank'
+                      style={{textAlign: 'left'}}>
+                      IssueHuntが目指す、OSSが正当に評価される世界とは
+                    </a>
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-                <p>
-                  creiveに、CEO横溝のインタビューが掲載されました。
-                  <a href='https://creive.me/archives/17156/'
-                    className='url'
-                    target='_blank'
-                    style={{textAlign: 'left'}}>
-                    スタートアップなのに開発者は数百人!?「IssueHunt」によって開発者の未来が変わるかもしれない。
-                  </a>
-                </p>
-            </Col>
 
-            {/* <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2018 12</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    第三者割当増資を実施し、詳報がTechCrunchに掲載されました。<br />
+                    <a href='https://jp.techcrunch.com/2018/12/03/issuehunt-fundraising/'
+                      className='url'
+                      target='_blank'
+                      style={{textAlign: 'left'}}>
+                      オープンソースの貢献者が報われる文化を——報賞金サービス「IssueHunt」運営が1億円を資金調達
+                    </a>
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-              <Col>
-              </Col>
-            </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2018 12</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                  <p>
+                    creiveに、CEO横溝のインタビューが掲載されました。<br />
+                    <a href='https://creive.me/archives/17156/'
+                      className='url'
+                      target='_blank'
+                      style={{textAlign: 'left'}}>
+                      スタートアップなのに開発者は数百人!?「IssueHunt」によって開発者の未来が変わるかもしれない。
+                    </a>
+                  </p>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-              <Col>
-              </Col>
-            </Col>
 
-            <Col lg={4}></Col>
-              <Col xs={2} sm={2} lg={2}>
-                <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+              {/* <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                <Col>
+                </Col>
               </Col>
-              <Col xs={8} sm={8} lg={6}>
-              <Col>
+
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                <Col>
+                </Col>
               </Col>
-            </Col> */}
-          </Row>      
+
+              <Col lg={4}></Col>
+                <Col xs={2} sm={2} lg={2}>
+                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
+                </Col>
+                <Col xs={8} sm={8} lg={6}>
+                <Col>
+                </Col>
+              </Col> */}
+            </Row>
+            </NewsList>
         </Container>
       </Row>
     </Container>
@@ -251,7 +272,9 @@ export default () => (
             <h4 style={{textAlign: 'center'}}>RECRUIT</h4>
             </Col>
             <Col lg={8}>
-              <p>オープンソースプロジェクトの為の資金調達サービス。誰でもGitHub Issueに対して報奨金を付けることができ、それらが開発者と貢献者へ分配されます。現在ユーザーは170ヶ国を超えており、世界中の著名なOSSがIssueHuntに参加しています。</p>
+              <h4>全ての人へ、公平な評価を。共創を、どこでも、誰とでも。</h4>
+              <p>日本で唯一無二と言っても過言ではない、オープンソースとグローバルがテーマのスタートアップ企業です。開発しているIssueHunt, Boostnoteといったプロダクトは既に200ヶ国以上へ拡がり、更に拡大を続けています。</p>
+              <p>地球上の全ての人が公平に評価され、どこでも誰とでも共創することが出来るプラットフォームを作ることに、全力を挙げて取り組んでいます！</p>
               <Button style={{backgroundColor:'#fff', borderRadius:'0', border:'2px solid red', float:'right'}}>
                 <a href='https://www.wantedly.com/companies/boostio'
                   className='url'
@@ -267,7 +290,7 @@ export default () => (
     </Container>
 
     <Container fluid style={{ height: '100vh', backgroundColor: '#fff', display: 'table'}}>
-      <ResponsiveEmbed aspect="a16by9" style={{ height: '100vh', position:'absolute', filter: 'gray', webkitFilter: 'grayscale(100%)', filter: 'grayscale(100%)'}}>
+      <ResponsiveEmbed aspect="a16by9" style={{ height: '100vh', position:'absolute', filter: 'gray', webkitFilter: 'grayscale(100%)', filter: 'grayscale(100%)' }}>
         <embed type="image/svg+xml" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.700503849805!2d139.70579771512433!3d35.6597498801994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5ee8bea177%3A0x935a6bb0746ce85!2sGood+Morning+Building+by+anri!5e0!3m2!1sen!2sjp!4v1551032313688" />
       </ResponsiveEmbed>
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
@@ -295,9 +318,9 @@ export default () => (
             <h4 style={{textAlign: 'center'}}>CONTACT</h4>
             </Col>
             <Col lg={8}>
-              <p>弊社のサービスや採用に関するお問い合わせ、取材依頼はこちらからお気軽にお問い合わせください。</p>
+              <p>取材依頼や提供サービスなどにつきまして、こちらからお気軽にお問い合わせください。</p>
               <Button style={{backgroundColor:'#fff', borderRadius:'0', border:'2px solid yellow', float:'right'}}>
-              <a href='#'
+              <a href='https://goo.gl/forms/dhou74z7zS4sXVmq2'
                 className='url'
                 target='_blank'
                 style={{color: '#000', textDecoration: 'none'}}>
@@ -307,7 +330,7 @@ export default () => (
             </Col>
           </Row>      
         </Container>
-      </Row>>
+      </Row>
     </Container>
 
     <Container fluid style={{ marginTop: '20px', backgroundColor: '#fff', display: 'table', textAlign: 'center'}}>
