@@ -234,32 +234,6 @@ export default () => (
                   </p>
               </Col>
 
-              {/* <Col lg={4}></Col>
-                <Col xs={2} sm={2} lg={2}>
-                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
-                </Col>
-                <Col xs={8} sm={8} lg={6}>
-                <Col>
-                </Col>
-              </Col>
-
-              <Col lg={4}></Col>
-                <Col xs={2} sm={2} lg={2}>
-                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
-                </Col>
-                <Col xs={8} sm={8} lg={6}>
-                <Col>
-                </Col>
-              </Col>
-
-              <Col lg={4}></Col>
-                <Col xs={2} sm={2} lg={2}>
-                  <Col><p style={{textAlign: 'right'}}>2019 02</p></Col>
-                </Col>
-                <Col xs={8} sm={8} lg={6}>
-                <Col>
-                </Col>
-              </Col> */}
             </Row>
             </NewsList>
         </Container>
