@@ -29,8 +29,6 @@ export default class MyDocument extends Document {
 
           <link href='/static/normalize.css' rel='stylesheet' />
           <link href='/static/base.css' rel='stylesheet' />
-          <script src="https://unpkg.com/react/umd/react.production.js" crossorigin />
-          <script src="https://unpkg.com/react-dom/umd/react-dom.production.js" crossorigin />
           <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin />
           <link
             rel="stylesheet"
