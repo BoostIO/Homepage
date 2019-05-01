@@ -7,7 +7,8 @@
     "start": "hs out",
     "build": "next build && next export",
     "dev": "next dev",
-    "lint": "eslint **/*.js",
+    "lint": "prettier '{pages,components}/**/*.{js,jsx}'",
+    "format": "prettier --write '{pages,component}/**/*.{js,jsx}'",
     "deploy": "sh scripts/deploy.sh"
   },
   "keywords": [],
@@ -35,6 +36,7 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-react": "^7.6.1",
     "eslint-plugin-standard": "^3.0.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "prettier": "^1.17.0"
   }
 }
