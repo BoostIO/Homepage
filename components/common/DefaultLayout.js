@@ -42,16 +42,13 @@ const Container = styled.div`
 
 const Main = styled.main`
   width: 100%;
-  max-width: 810px;
   margin: 0 auto;
 `
 
-export default ({children}) => (
+export default ({ children }) => (
   <Container>
     <Header />
-    <Main>
-      {children}
-    </Main>
+    <Main>{children}</Main>
     <Footer />
   </Container>
 )

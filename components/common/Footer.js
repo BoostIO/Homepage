@@ -9,11 +9,7 @@ const Footer = styled.footer`
   color: #a1a7b3;
   background-color: #fff;
   box-shadow: 0 -1px 0 0 #ebedf2;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
 `
 
-export default () => (
-  <Footer>
-    © 2018 BoostIO
-  </Footer>
-)
+export default () => <Footer>©2019 BoostIO</Footer>

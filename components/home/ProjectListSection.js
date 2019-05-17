@@ -1,11 +1,16 @@
 import React from 'react'
-import Section from './Section'
+import { Row, Container, Col } from 'react-bootstrap'
 import styled from 'styled-components'
 
 const ProjectList = styled.ul`
+  padding-top: 50px;
   padding-left: 0;
   list-style-type: none;
   margin: 0 -10px;
+  a {
+    color: #f26c50;
+    font-style: italic;
+  }
   @media (min-width: 540px) {
     display: flex;
     justify-content: center;
@@ -13,113 +18,109 @@ const ProjectList = styled.ul`
   }
 `
 
-const ProjectListItem = styled.li`
-  width: 100%;
-  padding: 0 10px;
-  text-align: center;
-  transition: transform 400ms;
-  :not(:first-child) {
-    margin-top: 48px;
-  }
-  h1 {
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-family: inherit;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.333333333;
-    letter-spacing: -.01em;
-    color: #212529;
-  }
-  a {
-    text-decoration: none;
-    color: #a1a7b3;
-    transition: color 300ms;
-    font-size: 14px;
-    font-style: italic;
-    letter-spacing: -.01em;
-  }
-  a:hover {
-    text-decoration: none;
-    color: #3d434d;
-  }
-  p {
-    margin-top: 24px;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #3d434d;
-  }
-  :hover {
-    text-decoration: none;
-    transform: translateY(-4px);
-    img {
-      transform: scale(1.05);
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 40%;
-    :not(:first-child) {
-      margin-top: 0;
-    }
-  }
-`
-
-const ProjectLogo = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  img {
-    transition: transform 300ms;
-  }
-`
-
 const ProjectListSection = () => (
-  <Section title='Projects'>
-    <ProjectList>
-      <ProjectListItem>
-        <ProjectLogo href='https://boostnote.io'
-          target='_blank'>
-          <img
-            width='100'
-            height='100'
-            src='/static/images/img-boostnote.png' />
-        </ProjectLogo>
-        <h1>Boostnote</h1>
-        <a href='https://boostnote.io'
-          className='url'
-          target='_blank'>
-          boostnote.io
-        </a>
-        <p>
-          Note-taking app
-          <br />
-          for developers.
-        </p>
-      </ProjectListItem>
-      <ProjectListItem>
-        <ProjectLogo href='https://issuehunt.io'
-          target='_blank'>
-          <img
-            width='100'
-            height='100'
-            src='/static/images/img-issuehunt.png' />
-        </ProjectLogo>
-        <h1>IssueHunt</h1>
-        <a href='https://issuehunt.io'
-          className='url'
-          target='_blank'>
-          issuehunt.io
-        </a>
-        <p>
-          Issue based bounty platform
-          <br/>
-          for open source projects.
-        </p>
-      </ProjectListItem>
-    </ProjectList>
-  </Section>
+  <Container
+    fluid
+    style={{ height: '100vh', backgroundColor: '#f8f9fa', display: 'table' }}
+  >
+    <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+      <Container
+        fluid
+        style={{
+          height: '100vh',
+          backgroundColor: '#f8f9fa',
+          display: 'table'
+        }}
+      >
+        <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+          <Container>
+            <ProjectList>
+              <Row>
+                <Col md={5}>
+                  <img
+                    width="80%"
+                    src="/static/images/issuehunt-image.png"
+                    float="center"
+                  />
+                </Col>
+                <Col md={7}>
+                  <h1>
+                    IssueHunt
+                    <img
+                      width="60"
+                      height="60"
+                      src="/static/images/img-issuehunt.png"
+                    />
+                  </h1>
+
+                  <a
+                    href="https://issuehunt.io"
+                    className="url"
+                    target="_blank"
+                  >
+                    issuehunt.io
+                  </a>
+                  <p>
+                    An issue-based bounty platform for open source projects.
+                  </p>
+                  <p>
+                    Much famous open-source projects such as Jekyll (37k GitHub
+                    stars), Material-UI (45k GitHub stars) and AntDesign (34k
+                    GitHub stars) has been participating on IssueHunt.
+                  </p>
+                  <a href="https://issuehunt.io/sponsors">About Sponsorship</a>
+                </Col>
+              </Row>
+            </ProjectList>
+          </Container>
+        </Row>
+      </Container>
+
+      <Container
+        fluid
+        style={{ height: '100vh', backgroundColor: '#fff', display: 'table' }}
+      >
+        <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+          <Container>
+            <ProjectList>
+              <Row>
+                <Col md={7}>
+                  <h1>
+                    Boostnote
+                    <img
+                      width="60"
+                      height="60"
+                      src="/static/images/img-bnote.png"
+                      float="center"
+                    />
+                  </h1>
+                  <a
+                    href="https://boostnote.io"
+                    className="url"
+                    target="_blank"
+                  >
+                    boostnote.io
+                  </a>
+                  <p>
+                    An open source markdown editor for developers on Mac,
+                    Windows and Linux.
+                  </p>
+                  <p>1.4k GitHub stars.</p>
+                </Col>
+                <Col md={5}>
+                  <img
+                    width="100%"
+                    src="/static/images/boostnote-image.png"
+                    float="center"
+                  />
+                </Col>
+              </Row>
+            </ProjectList>
+          </Container>
+        </Row>
+      </Container>
+    </Row>
+  </Container>
 )
 
 export default ProjectListSection
