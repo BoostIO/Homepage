@@ -7,27 +7,24 @@ const Container = styled.section`
   justify-content: center;
   align-items: center;
   padding: 160px 10px;
-  height: 100vh;
   @media screen and (min-width: 560px) {
     height: auto;
   }
 `
 
-const Logo = ({
-  type,
-  width,
-  height,
-  alt,
-}) => {
+const Logo = ({ type, width, height, alt }) => {
   const Image = styled.img`
     display: block;
   `
-  return <Image className={`logo-${type}`}
-    src={`/static/images/boostio-${type}.svg`}
-    alt={alt}
-    width={width}
-    height={height}
-  />
+  return (
+    <Image
+      className={`logo-${type}`}
+      src={`/static/images/boostio-${type}.svg`}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  )
 }
 
 const CompanyName = styled.h1`
@@ -42,10 +39,11 @@ const CompanyName = styled.h1`
 `
 
 const CompanyDescription = styled.p`
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.333333333;
-  letter-spacing: .02em;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #3d434d;
   @media screen and (min-width: 768px) {
@@ -54,18 +52,15 @@ const CompanyDescription = styled.p`
 `
 
 const Jumbotron = () => (
-  <Container>
+  <Container
+    fluid
+    style={{
+      height: '100vh'
+    }}
+  >
     <CompanyName>
-      <Logo type='img'
-        alt='BoostIO Logo'
-        width={160}
-        height={80}
-      />
-      <Logo type='text'
-        alt='BoostIO'
-        width={135}
-        height={28}
-      />
+      <Logo type="img" alt="BoostIO Logo" width={160} height={80} />
+      <Logo type="text" alt="BoostIO" width={135} height={28} />
     </CompanyName>
     <CompanyDescription>
       The Open Source Enthusiastic Collective

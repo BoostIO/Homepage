@@ -143,7 +143,7 @@ export default () => (
               </Col>
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2019 02</p>
+                  <p style={{ textAlign: 'right' }}>2019</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -165,7 +165,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2019 02</p>
+                  <p style={{ textAlign: 'right' }}>2019</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -186,7 +186,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2019 02</p>
+                  <p style={{ textAlign: 'right' }}>2019</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -208,7 +208,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2019 01</p>
+                  <p style={{ textAlign: 'right' }}>2019</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -221,7 +221,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2018 12</p>
+                  <p style={{ textAlign: 'right' }}>2018</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -242,7 +242,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2018 12</p>
+                  <p style={{ textAlign: 'right' }}>2018</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
@@ -263,7 +263,7 @@ export default () => (
               <Col lg={4} />
               <Col xs={2} sm={2} lg={2}>
                 <Col>
-                  <p style={{ textAlign: 'right' }}>2018 12</p>
+                  <p style={{ textAlign: 'right' }}>2018</p>
                 </Col>
               </Col>
               <Col xs={8} sm={8} lg={6}>
