@@ -14,18 +14,16 @@ const CorporateSection = () => (
           </Col>
           <Col lg={8}>
             <h4>
-              Empower every person co-create with anyone from anywhere, anytime.
+              Empower every person to co-create with anyone from anywhere, anytime.
             </h4>
             <p>
-              We make open source sustainable ecosystem and transparent the
-              developer's credit. Passionate about make the co-create platform
-              where every person can work with anyone, anywhere.
+              We are passionate about creating a sustainable open source ecosystem.
             </p>
             <p>
-              We are hiring for UI designer and software developer (TypeScript
+              At Issuehunt, we are hiring talented UI designer and software developer (TypeScript
               and React).
             </p>
-            <p>Work with us!</p>
+            <p>Come join us!</p>
             <Button
               style={{
                 backgroundColor: '#fff',
