@@ -64,9 +64,9 @@ const ProjectListSection = () => (
                     An issue-based bounty platform for open source projects.
                   </p>
                   <p>
-                    Much famous open-source projects such as Jekyll (37k GitHub
+                    Popular open-source projects such as Jekyll (37k GitHub
                     stars), Material-UI (45k GitHub stars) and AntDesign (34k
-                    GitHub stars) has been participating on IssueHunt.
+                    GitHub stars) are using IssueHunt.
                   </p>
                   <a href="https://issuehunt.io/sponsors">About Sponsorship</a>
                 </Col>
