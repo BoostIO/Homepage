@@ -322,7 +322,7 @@ export default () => (
 
     <Container
       fluid
-      style={{ height: '100vh', backgroundColor: '#fff', display: 'table' }}
+      style={{ height: '100vh', backgroundColor: '#f8f9fa', display: 'table' }}
     >
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <Container>
