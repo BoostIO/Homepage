@@ -136,6 +136,40 @@ export default () => (
     >
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
         <Container>
+          <ProjectList>
+            <Row>
+              <Col md={5}>
+                <img
+                  width="80%"
+                  src="/static/images/github.png"
+                  float="center"
+                />
+              </Col>
+              <Col md={7}>
+                <h1>オープンソース開発支援</h1>
+
+                <p>
+                  日本を代表するオープンソースであるBoostnoteの開発や、IssueHuntを通じて多くのオープンソースコミュニティと関わってきた経験を活かし、企業様のオープンソース開発をサポートさせて頂きます。
+                </p>
+                <p>
+                  御社が独自に開発されているライブラリやプロジェクトのオープンソース化に際し、ライセンスの選定や実際にGitHub上に公開するところまでサポートさせて頂きます。
+                </p>
+                <a href="https://forms.gle/a2am78gBTenmzAoj6">
+                  お問い合わせはこちらから
+                </a>
+              </Col>
+            </Row>
+          </ProjectList>
+        </Container>
+      </Row>
+    </Container>
+
+    <Container
+      fluid
+      style={{ height: '100vh', backgroundColor: '#fff', display: 'table' }}
+    >
+      <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+        <Container>
           <NewsList>
             <Row>
               <Col lg={4}>
