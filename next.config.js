@@ -1,9 +1,10 @@
 // next.config.js
 module.exports = {
-  exportPathMap: function () {
+  exportPathMap: function() {
     return {
       '/': { page: '/' },
-      '/jp': { page: '/jp' }
+      '/jp': { page: '/jp' },
+      '/mission': { page: '/mission' }
     }
   }
 }
