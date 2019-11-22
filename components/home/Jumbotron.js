@@ -1,18 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Row, Container, Col } from 'react-bootstrap'
 
-const Container = styled.section`
+const Wrap = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 160px 10px;
+  padding: 250px 10px;
   @media screen and (min-width: 560px) {
     height: auto;
   }
+  color: #f2f2f2;
 `
 
-const Logo = ({ type, width, height, alt }) => {
+const Logo = ({ type, height, alt }) => {
   const Image = styled.img`
     display: block;
   `
@@ -21,51 +23,67 @@ const Logo = ({ type, width, height, alt }) => {
       className={`logo-${type}`}
       src={`/static/images/boostio-${type}.svg`}
       alt={alt}
-      width={width}
       height={height}
     />
   )
 }
 
 const CompanyName = styled.h1`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin-bottom: 40px;
-  .logo-img {
-    margin-bottom: 24px;
-  }
-`
-
-const CompanyDescription = styled.p`
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Arial, sans-serif;
-  font-size: 20px;
-  line-height: 1.333333333;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #3d434d;
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-  }
+  color: #f2f2f2;
+  font-size: 60px;
+  font-weight: 300;
 `
 
 const Jumbotron = () => (
-  <Container
-    fluid
-    style={{
-      height: '100vh'
-    }}
-  >
-    <CompanyName>
-      <Logo type="img" alt="BoostIO Logo" width={160} height={80} />
-      <Logo type="text" alt="BoostIO" width={135} height={28} />
-    </CompanyName>
-    <CompanyDescription>
-      The Open Source Enthusiastic Collective
-    </CompanyDescription>
-  </Container>
+  <Wrap fluid>
+    <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
+      <Container>
+        <CompanyName>
+          <Row>
+            <Col lg={3}>
+              <Logo type="img" alt="BoostIO Logo" height={60} />
+            </Col>
+            <Col lg={4}>
+              <p style={{ marginTop: '-5px' }}>BOOSTIO</p>
+            </Col>
+          </Row>
+        </CompanyName>
+        <Row>
+          <Col lg={4}>
+            <a
+              href="https://boostio.co/mission"
+              className="url"
+              style={{ color: '#f2f2f2', textDecoration: 'none' }}
+            >
+              MISSION
+            </a>
+          </Col>
+          <Col lg={4}>
+            <a
+              href="https://boostnote.io"
+              className="url"
+              target="_blank"
+              style={{ color: '#f2f2f2', textDecoration: 'none' }}
+            >
+              BOOSTNOTE
+            </a>
+          </Col>
+          <Col lg={4}>
+            <a
+              href="https://issuehunt.io"
+              className="url"
+              target="_blank"
+              style={{ color: '#f2f2f2', textDecoration: 'none' }}
+            >
+              ISSUEHUNT
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </Row>
+  </Wrap>
 )
 
 export default Jumbotron
