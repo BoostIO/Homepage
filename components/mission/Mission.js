@@ -27,11 +27,12 @@ const Mission = () => (
         <h5>✌️Vision: Liberate everyone’s creativity.</h5>
         <br />
         <p>
-          21st century, many services and many industries will be replaced by
-          technology. Technology will take simple work from human being. So
-          creativity that only people have is the main character for this era.
-          Programmer is the most important exist. It is the most important
-          creator for the future.
+          In the 21st century, many services and industries will be replaced by
+          technology as computers take the simple and easily automated work from
+          humans. In this new era we will be freed to focus on what only humans
+          can do, Creativity and Creation. The programmer is the lynch pin
+          between these worlds and is one of the most import creaters in todays
+          society.
         </p>
       </Jumbotron>
       <Jumbotron
@@ -46,11 +47,11 @@ const Mission = () => (
         </h5>
         <br />
         <p>
-          We, BoostIO will be a conductor for creators. We have to provide to
-          platform that they can bring out full of their potential. We will lead
-          them and era in the right direction. Let's bring new standard of work,
-          living, evaluation and everything. Let's change the common sense until
-          today through co-create with creators.
+          We, BoostIO will be a conductor for creators. We will provide a
+          platform on which they can bring out full of their potential. We will
+          guide them and the era in the right direction. Let's bring new values
+          with a new standard of work, living, evaluation and everything through
+          co-creation.
         </p>
       </Jumbotron>
 
