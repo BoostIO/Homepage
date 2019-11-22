@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from './Header'
 import Footer from './Footer'
 import styled, { injectGlobal } from 'styled-components'
 
@@ -38,6 +37,8 @@ const Container = styled.div`
   box-sizing: border-box;
   width: 100%;
   overflow-x: hidden;
+  background: #212121;
+  height: 100vh;
 `
 
 const Main = styled.main`
@@ -47,7 +48,6 @@ const Main = styled.main`
 
 export default ({ children }) => (
   <Container>
-    <Header />
     <Main>{children}</Main>
     <Footer />
   </Container>
