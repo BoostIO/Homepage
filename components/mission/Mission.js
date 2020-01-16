@@ -31,7 +31,7 @@ const Mission = () => (
           technology as computers take the simple and easily automated work from
           humans. In this new era we will be freed to focus on what only humans
           can do, Creativity and Creation. The programmer is the lynch pin
-          between these worlds and is one of the most import creaters in todays
+          between these worlds and is one of the most important creators in todays
           society.
         </p>
       </Jumbotron>
