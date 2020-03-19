@@ -55,4 +55,4 @@ now alias https://out-${SOME_RANDOM_HASH}.now.sh boostio.co
 
 ## Copyright
 
-©2019 BoostIO.
+©2020 BoostIO.

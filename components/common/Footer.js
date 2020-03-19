@@ -15,4 +15,4 @@ const Footer = styled.footer`
   right: 0;
   margin: 0 auto;
 `
-export default () => <Footer centered>©2019 BoostIO</Footer>
+export default () => <Footer centered>©2020 BoostIO</Footer>
