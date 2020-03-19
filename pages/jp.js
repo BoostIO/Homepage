@@ -462,7 +462,7 @@ export default () => (
       }}
     >
       <Row style={{ display: 'table-cell', verticalAlign: 'middle' }}>
-        <p>© 2019 BoostIO</p>
+        <p>© 2020 BoostIO</p>
       </Row>
     </Container>
   </div>
