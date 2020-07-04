@@ -20,11 +20,11 @@ const Mission = () => (
       <Jumbotron
         style={{
           background: 'transparent',
-          paddingTop: '140px',
+          paddingTop: '50px',
           paddingBottom: '20px'
         }}
       >
-        <h5>✌️Vision: Liberate everyone’s creativity.</h5>
+        <h5>✌️&ensp;Vision: Liberate everyone’s creativity.</h5>
         <br />
         <p>
           In the 21st century, many services and industries will be replaced by
@@ -43,7 +43,8 @@ const Mission = () => (
         }}
       >
         <h5>
-          🎯Mission: Empower creators by realizing the standards of tomorrow.
+          🎯&ensp;Mission: Empower creators by realizing the standards of
+          tomorrow.
         </h5>
         <br />
         <p>
@@ -66,14 +67,17 @@ const Mission = () => (
             paddingLeft: '15px'
           }}
         >
-          💌Contact
+          💌&ensp;Contact
         </a>
       </Container>
       <Container>
         <img
           src="/static/images/685A8003.jpg"
           style={{
-            height: '420px',
+            maxHeight: '420px',
+            maxWidth: '100%',
+            height: 'auto',
+            width: 'auto',
             paddingLeft: '15px',
             paddingBottom: '80px',
             paddingTop: '20px'
